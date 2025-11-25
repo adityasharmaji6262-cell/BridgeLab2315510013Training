@@ -1,0 +1,38 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Q1 - Welcome Greeting</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="q1.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body{font-family:Arial;margin:20px}
+    .welcome{background:#eef2ff;padding:16px;border-radius:8px;max-width:720px}
+    button{margin:6px}
+  </style>
+</head>
+<body>
+  <header><h1>Welcome Page Greeting</h1></header>
+  <main class="welcome" role="main">
+    <h2 id="greeting">Hello!</h2>
+    <p id="welcome-msg">Welcome to our site. Enjoy your stay!</p>
+    <div>
+      <button id="change-greet">Change Greeting</button>
+      <button id="toggle-welcome">Toggle Welcome Message</button>
+    </div>
+    <section aria-label="examples">
+      <h3>Examples</h3>
+      <ul>
+        <li>Dynamic greeting based on time</li>
+        <li>Motivational quote on click</li>
+        <li>Toggle visibility</li>
+        <li>Clicking greeting shows alert</li>
+        <li>Accessible markup (semantic)</li>
+      </ul>
+    </section>
+  </main>
+  <footer><small>Q1 example</small></footer>
+</body>
+</html>

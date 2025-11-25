@@ -1,0 +1,59 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Q2 - Product Highlight</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="q2.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body{font-family:Arial;margin:20px}
+    .products{display:flex;gap:12px;flex-wrap:wrap}
+    .product{width:160px;border:1px solid #ddd;padding:10px;border-radius:6px;cursor:pointer;position:relative;background:#fff}
+    .product.highlight{box-shadow:0 6px 16px rgba(0,0,0,0.08);border-color:#60a5fa;background:#f0f9ff}
+    .fav{position:absolute;right:8px;top:8px;font-size:18px;cursor:pointer}
+    .fav.selected{color:#ef4444}
+    .details{display:none;margin-top:8px;font-size:13px;color:#333}
+    .discount{font-weight:700;color:#047857}
+  </style>
+</head>
+<body>
+  <header><h1>Product Highlight</h1></header>
+  <main>
+    <div class="products" aria-live="polite">
+      <article class="product" data-out-of-stock="false" data-discount="10" data-id="p1" tabindex="0">
+        <div class="fav">♡</div>
+        <h4 class="pname">Wireless Mouse</h4>
+        <div class="price">₹499 <span class="discount">10% off</span></div>
+        <div class="details">Comfortable grip, 2-year battery life.</div>
+      </article>
+      <article class="product" data-out-of-stock="true" data-discount="0" data-id="p2" tabindex="0">
+        <div class="fav">♡</div>
+        <h4 class="pname">Bluetooth Headset</h4>
+        <div class="price">₹1299</div>
+        <div class="details">Noise cancellation, 20h playtime.</div>
+      </article>
+      <article class="product" data-out-of-stock="false" data-discount="25" data-id="p3" tabindex="0">
+        <div class="fav">♡</div>
+        <h4 class="pname">Gaming Keyboard</h4>
+        <div class="price">₹1999 <span class="discount">25% off</span></div>
+        <div class="details">RGB, tactile switches.</div>
+      </article>
+      <article class="product" data-out-of-stock="false" data-discount="5" data-id="p4" tabindex="0">
+        <div class="fav">♡</div>
+        <h4 class="pname">USB-C Hub</h4>
+        <div class="price">₹899 <span class="discount">5% off</span></div>
+        <div class="details">4 ports, compact design.</div>
+      </article>
+      <article class="product" data-out-of-stock="false" data-discount="0" data-id="p5" tabindex="0">
+        <div class="fav">♡</div>
+        <h4 class="pname">Laptop Stand</h4>
+        <div class="price">₹799</div>
+        <div class="details">Ergonomic and foldable.</div>
+      </article>
+    </div>
+  </main>
+  <footer><small>Q2 example</small></footer>
+</body>
+</html>

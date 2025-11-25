@@ -1,0 +1,57 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Q3 - Interactive FAQ</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="q3.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body{font-family:Arial;margin:20px}
+    .faq dt{cursor:pointer;padding:8px;background:#f8fafc;border-radius:6px;margin-top:6px}
+    .faq dd{margin:0 0 10px 12px;padding:8px;display:none;background:#fff;border:1px solid #eee;border-radius:6px}
+    .faq dt:hover{background:#eef2ff}
+    input.answer-input{padding:8px;width:100%;box-sizing:border-box;border-radius:6px;border:1px solid #ddd}
+  </style>
+</head>
+<body>
+  <header><h1>Interactive FAQ</h1></header>
+  <main>
+    <section class="faq" role="region" aria-label="faq">
+      <dl>
+        <dt tabindex="0">What is your return policy?</dt>
+        <dd>
+          <p>We accept returns within 30 days.</p>
+          <input class="answer-input" placeholder="Leave a comment (focus to highlight)">
+        </dd>
+
+        <dt tabindex="0">How long is shipping?</dt>
+        <dd>
+          <p>Standard shipping: 5-7 business days.</p>
+          <input class="answer-input" placeholder="Ask a shipping question">
+        </dd>
+
+        <dt tabindex="0">Do you ship internationally?</dt>
+        <dd>
+          <p>Yes, we ship to most countries.</p>
+          <input class="answer-input" placeholder="Enter destination">
+        </dd>
+
+        <dt tabindex="0">Can I cancel my order?</dt>
+        <dd>
+          <p>Orders can be cancelled within 12 hours.</p>
+          <input class="answer-input" placeholder="Cancellation details">
+        </dd>
+
+        <dt tabindex="0">How do discounts work?</dt>
+        <dd>
+          <p>Discounts apply at checkout automatically.</p>
+          <input class="answer-input" placeholder="Ask about discounts">
+        </dd>
+      </dl>
+    </section>
+  </main>
+  <footer><small>Q3 example</small></footer>
+</body>
+</html>
