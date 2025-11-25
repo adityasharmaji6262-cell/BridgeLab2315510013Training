@@ -1,0 +1,47 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Q5 - Team Directory</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="q5.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body{font-family:Arial;margin:20px}
+    .team{max-width:720px}
+    .manager{font-weight:700;cursor:pointer;margin-top:8px}
+    .employee{padding:6px;border:1px solid #eee;border-radius:6px;margin:6px 0}
+    .highlight{background:#f0f9ff}
+    .contact{display:none;font-size:13px;color:#374151}
+    .dept{margin-top:12px;padding:10px;border-radius:6px;background:#fff}
+  </style>
+</head>
+<body>
+  <header><h1>Team Members Directory</h1></header>
+  <main class="team">
+    <section class="dept" data-dept="engineering">
+      <h2 class="manager" data-manager="m1">Alice (Engineering Manager)</h2>
+      <div class="reports">
+        <div class="employee" data-manager="m1">Bob <span class="contact"> - bob@company.com</span></div>
+        <div class="employee" data-manager="m1">Cara <span class="contact"> - cara@company.com</span></div>
+        <div class="employee" data-manager="m1">Dan <span class="contact"> - dan@company.com</span></div>
+      </div>
+    </section>
+
+    <section class="dept" data-dept="design">
+      <h2 class="manager" data-manager="m2">Eve (Design Manager)</h2>
+      <div class="reports">
+        <div class="employee" data-manager="m2">Fay <span class="contact"> - fay@company.com</span></div>
+        <div class="employee" data-manager="m2">Gus <span class="contact"> - gus@company.com</span></div>
+      </div>
+    </section>
+
+    <div style="margin-top:10px">
+      <button id="random">Select Random Employee</button>
+      <button id="toggle-team">Collapse/Expand Teams</button>
+    </div>
+  </main>
+  <footer><small>Q5 example</small></footer>
+</body>
+</html>

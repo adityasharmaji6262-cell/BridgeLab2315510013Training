@@ -1,0 +1,30 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Q8 - Dynamic Blog Posts</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="q8.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>body{font-family:Arial;margin:20px}.post{padding:10px;border:1px solid #eee;margin:8px;border-radius:6px}</style>
+</head>
+<body>
+  <header><h1>Dynamic Blog Posts</h1></header>
+  <main>
+    <div>
+      <input id="new-title" placeholder="Post title"><button id="add">Add New Post</button>
+      <button id="prepend">Prepend Featured Post</button>
+      <button id="remove-last">Remove Last Post</button>
+    </div>
+    <div id="posts" style="margin-top:12px">
+      <div class="post">Understanding HTTP</div>
+      <div class="post">Intro to jQuery</div>
+      <div class="post">CSS Grid Layout</div>
+      <div class="post">Accessibility Basics</div>
+      <div class="post">Performance Optimization</div>
+    </div>
+  </main>
+  <footer><small>Q8 example</small></footer>
+</body>
+</html>
